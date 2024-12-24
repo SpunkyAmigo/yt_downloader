@@ -105,7 +105,7 @@ def _prepare_download_options(
     config["socket_timeout"] = 30  # Timeout in seconds
     config["ignoreerrors"] = True  # Continue on download errors
     config["continuedl"] = True  # Continue partial downloads
-    config["cookiefile"] = "cookies.txt"
+    config["cookiefile"] = "./cookies.txt"
 
     if only_audio:
         config["format"] = "bestaudio" if quality == "highest" else "worstaudio"
